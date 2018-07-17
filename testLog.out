@@ -1,0 +1,21 @@
+2018-07-10 18:45:32 INFO  com.kasback.abstestbase.AbstractTest.printBanner(AbstractTest.java:84) - ========================================= TEST SUITE STARTED ================================
+2018-07-10 18:45:32 INFO  com.kasback.abstestbase.AbstractTest.beforesuite(AbstractTest.java:53) - before env->test
+2018-07-10 18:45:32 INFO  com.kasback.abstestbase.AbstractTest.beforesuite(AbstractTest.java:54) - before browser->chrome
+2018-07-10 18:45:32 INFO  com.kasback.utils.PostgresqlUtil.<init>(PostgresqlUtil.java:30) - jdbc:mysql://kasback.chrp5tjafhuc.ap-south-1.rds.amazonaws.com/kasback/agam:uioue832jksj
+2018-07-10 18:45:33 INFO  com.kasback.abstestbase.AbstractTest.getDriver(AbstractTest.java:95) - false
+2018-07-10 18:45:33 INFO  com.kasback.abstestbase.AbstractTest.getDriver(AbstractTest.java:113) - running on browser chrome
+2018-07-10 18:45:33 INFO  com.kasback.abstestbase.AbstractTest.getDriver(AbstractTest.java:115) - chrome
+2018-07-10 18:45:33 INFO  com.kasback.abstestbase.AbstractTest.getDriver(AbstractTest.java:165) - starting chrome driver on local
+2018-07-10 18:45:40 INFO  com.kasback.utils.PostgresqlUtil.<init>(PostgresqlUtil.java:30) - jdbc:mysql://kasback.chrp5tjafhuc.ap-south-1.rds.amazonaws.com/kasback/agam:uioue832jksj
+2018-07-10 18:45:51 INFO  com.kasback.utils.PostgresqlUtil.<init>(PostgresqlUtil.java:30) - jdbc:mysql://kasback.chrp5tjafhuc.ap-south-1.rds.amazonaws.com/kasback/agam:uioue832jksj
+2018-07-10 18:45:51 INFO  com.kasback.utils.PostgresqlUtil.<init>(PostgresqlUtil.java:30) - jdbc:mysql://kasback.chrp5tjafhuc.ap-south-1.rds.amazonaws.com/kasback/agam:uioue832jksj
+2018-07-10 18:46:07 INFO  com.kasback.utils.PostgresqlUtil.executeSelectQuery(PostgresqlUtil.java:53) - select email_verification from kasback.user where email='usename8912@gmail.com'
+2018-07-10 18:46:10 INFO  com.kasback.utils.PostgresqlUtil.executeUpdateQuery(PostgresqlUtil.java:100) - update kasback.user set email_verification=1 where email='usename8912@gmail.com'
+2018-07-10 18:46:17 INFO  com.kasback.utils.PostgresqlUtil.<init>(PostgresqlUtil.java:30) - jdbc:mysql://kasback.chrp5tjafhuc.ap-south-1.rds.amazonaws.com/kasback/agam:uioue832jksj
+2018-07-10 18:46:17 INFO  com.kasback.utils.PostgresqlUtil.<init>(PostgresqlUtil.java:30) - jdbc:mysql://kasback.chrp5tjafhuc.ap-south-1.rds.amazonaws.com/kasback/agam:uioue832jksj
+2018-07-10 18:46:31 INFO  com.kasback.utils.PostgresqlUtil.<init>(PostgresqlUtil.java:30) - jdbc:mysql://kasback.chrp5tjafhuc.ap-south-1.rds.amazonaws.com/kasback/agam:uioue832jksj
+2018-07-10 18:46:31 INFO  com.kasback.utils.PostgresqlUtil.<init>(PostgresqlUtil.java:30) - jdbc:mysql://kasback.chrp5tjafhuc.ap-south-1.rds.amazonaws.com/kasback/agam:uioue832jksj
+2018-07-10 18:46:37 INFO  com.kasback.utils.PostgresqlUtil.<init>(PostgresqlUtil.java:30) - jdbc:mysql://kasback.chrp5tjafhuc.ap-south-1.rds.amazonaws.com/kasback/agam:uioue832jksj
+2018-07-10 18:46:41 INFO  com.kasback.utils.PostgresqlUtil.<init>(PostgresqlUtil.java:30) - jdbc:mysql://kasback.chrp5tjafhuc.ap-south-1.rds.amazonaws.com/kasback/agam:uioue832jksj
+2018-07-10 18:46:53 INFO  com.kasback.utils.PostgresqlUtil.executeSelectQuery(PostgresqlUtil.java:53) - select count(*) from kasback.order where buyer_id in (select id from kasback.user where email='usename8912@gmail.com')
+2018-07-10 18:46:53 INFO  com.kasback.webApplication.uiTesting.KasbackOrderWorkflows.placeNewOrder(KasbackOrderWorkflows.java:64) - Orders count is 1

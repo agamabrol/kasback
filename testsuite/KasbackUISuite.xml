@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Kasback UI Automation" parallel="classes"
+	thread-count="1">
+	<!-- <parameter name="env" value="test" /> <parameter name="browser" value="chrome" 
+		/> -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.volksHelp.abstestbase.TestListener" />
+		<listener class-name="com.volksHelp.abstest.SuiteListener" />
+		<listener class-name="org.testng.reporters.EmailableReporter2" />
+		<listener class-name="com.volksHelp.abstestbase.RetryListener" />
+	</listeners>
+	<test name="Kasback UI">
+		<classes>
+			<class name="com.kasback.webApplication.uiTesting.KasbackOrderWorkflows" />
+		</classes>
+	</test>
+
+</suite>  
