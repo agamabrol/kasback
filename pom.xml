@@ -48,7 +48,7 @@
 							<executable>python</executable>
 							<workingDirectory>.</workingDirectory>
 							<suiteXmlFiles>
-							<suiteXmlFile>>testsuite/KasbackUISuite.xml</suiteXmlFile>
+							<suiteXmlFile>testsuite/KasbackUISuite.xml</suiteXmlFile>
 							</suiteXmlFiles>
 							<arguments>
 								<argument>awsS3Download.py</argument>
