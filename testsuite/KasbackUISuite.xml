@@ -8,10 +8,10 @@
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-		<listener class-name="com.volksHelp.abstestbase.TestListener" />
-		<listener class-name="com.volksHelp.abstest.SuiteListener" />
+		<listener class-name="com.kasback.abstestbase.TestListener" />
+		<listener class-name="com.kasback.abstest.SuiteListener" />
 		<listener class-name="org.testng.reporters.EmailableReporter2" />
-		<listener class-name="com.volksHelp.abstestbase.RetryListener" />
+		<listener class-name="com.kasback.abstestbase.RetryListener" />
 	</listeners>
 	<test name="Kasback UI">
 		<classes>
