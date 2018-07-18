@@ -19,14 +19,6 @@ public class KasbackOrderWorkflows extends AbstractTest{
 	KasbackOrderWorkflowsPage workflowsPage = null;
 	String emailId;
 	
-	@Test
-	public void buyerSignUp() {
-		driver = getDriver();
-		loginPage = new KasbackLoginPage(driver);
-		loginPage.browseURL(environment.get("signupurl"));
-		loginPage = new KasbackLoginPage(driver);
-		emailId = loginPage.signUpAsBuyer();
-	}
 	
 	@Test
 	public void sellerSignUp() {
