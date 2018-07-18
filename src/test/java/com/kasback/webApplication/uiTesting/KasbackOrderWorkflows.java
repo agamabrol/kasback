@@ -29,13 +29,7 @@ public class KasbackOrderWorkflows extends AbstractTest{
 		emailId = loginPage.signUpAsSeller();
 	}
 	
-	@Test(dependsOnMethods="buyerSignUp")
-	public void loginAsBuyer() {
-		homepage =  new KasbackHomePage(driver);
-		loginPage = new KasbackLoginPage(driver);
-		loginPage.browseURL(environment.get("baseurl"));
-		loginPage.login();
-	}
+	
 	
 	@Test(dependsOnMethods="sellerSignUp")
 	public void loginAsSeller() {
@@ -45,17 +39,7 @@ public class KasbackOrderWorkflows extends AbstractTest{
 		loginPage.login();
 	}
 	
-	@Test(dependsOnMethods="loginAsBuyer")
-	public void placeNewOrder() {
-		workflowsPage = new KasbackOrderWorkflowsPage(driver);
-		homepage.selectAProduct();
-		workflowsPage.clickBuyNowButton();
-		workflowsPage.manageAddress();
-		workflowsPage.selectWalletPaymentMethod();
-		String ordersCount = pgutil.executeSelectQuery("select count(*) from kasback.order where buyer_id in (select id from kasback.user where email="+"'"+emailId+"')");
-		log.info("Orders count is "+ordersCount);
-		Assert.assertEquals(ordersCount, "1");
-	}
+	
 	
 	@AfterClass
 	public void afterClass() {
