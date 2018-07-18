@@ -27,11 +27,11 @@
         </plugin>
         <plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.22.0</version>
-			<configuration>
+					<version>2.20</version>
+					<configuration>							
 							<suiteXmlFiles>
 							<suiteXmlFile>testsuite/KasbackUISuite.xml</suiteXmlFile>
-							</suiteXmlFiles>
+							</suiteXmlFiles>							
 						</configuration>
 				</plugin>
 				<plugin>
@@ -42,9 +42,15 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<groupId>org.codehaus.mojo</groupId>
 				<version>1.5.0</version>
-				
-						
-					
+				<executions>
+					<execution>
+						<id>get-s3-dependency</id>
+						<phase>clean</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>						
+					</execution>
+				</executions>
 			</plugin>
       </plugins>
     </pluginManagement>
@@ -58,12 +64,11 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>6.14.3</version>
-    <scope>test</scope>
-</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.11</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
 		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
 		<dependency>
@@ -195,13 +200,14 @@
     <artifactId>jcommander</artifactId>
     <version>1.72</version>
 </dependency>
-
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
 <dependency>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-surefire-plugin</artifactId>
-  <version>2.22.0</version>
-  <type>maven-plugin</type>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>2.21.0</version>
 </dependency>
+
+
 	</dependencies>
 	
 </project>
