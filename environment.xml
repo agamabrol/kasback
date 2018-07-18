@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <environments>
-
 <environment id="test">
 <baseurl>http://test.r8akrvbhqt.ap-south-1.elasticbeanstalk.com</baseurl>
 <signupurl>http://test.r8akrvbhqt.ap-south-1.elasticbeanstalk.com/#!/auth</signupurl>>
@@ -8,7 +7,7 @@
 <dbuser>agam</dbuser>
 <dbpwd>uioue832jksj</dbpwd>		
 </environment>
-
+	
 <environment id="prod">
 <baseurl></baseurl>
 <dbCon></dbCon>
